@@ -1,0 +1,21 @@
+--cpu=Cortex-M4.fp
+"pov_led\startup_stm32f407xx.o"
+"pov_led\main.o"
+"pov_led\stm32f4xx_it.o"
+"pov_led\init.o"
+"pov_led\ws2812b_control.o"
+"pov_led\functions.o"
+"pov_led\characters.o"
+"pov_led\stm32f4xx_ll_gpio.o"
+"pov_led\stm32f4xx_ll_dma.o"
+"pov_led\stm32f4xx_ll_i2c.o"
+"pov_led\stm32f4xx_ll_tim.o"
+"pov_led\stm32f4xx_ll_usart.o"
+"pov_led\stm32f4xx_ll_rcc.o"
+"pov_led\stm32f4xx_ll_utils.o"
+"pov_led\stm32f4xx_ll_exti.o"
+"pov_led\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "POV_LED\POV_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "POV_LED.map" -o POV_LED\POV_LED.axf
